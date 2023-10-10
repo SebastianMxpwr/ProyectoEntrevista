@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<section>
+    <form (ngSubmit)="editar()" class="form">
+        <div class="form-container">
+            <h1>Agregar Persona</h1>
+            <div class="input-data">
+                <label for="">Nombre</label>
+                <input type="text" [(ngModel)]="nuevaPersona.nombre" name="nombre">
+            </div>
+            <div class="input-data">
+                <label for="">Apellido Paterno</label>
+                <input type="text" [(ngModel)]="nuevaPersona.apellidoPaterno" name="apellidopaterno">
+            </div>
+            <div class="input-data">
+                <label for="">Apellido Materno</label>
+                <input type="text" [(ngModel)]="nuevaPersona.apellidoMaterno" name="apellidomaterno" >
+            </div>
+            <div class="input-data">
+                <label for="">Email</label>
+                <input type="email" [(ngModel)]="nuevaPersona.email" name="email" disabled="true">
+            </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+</section>

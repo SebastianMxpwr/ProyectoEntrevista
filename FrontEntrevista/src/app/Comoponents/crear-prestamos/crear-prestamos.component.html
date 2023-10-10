@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<section>
+    <form (ngSubmit)="submit()" class="form">
+        <div class="form-container">
+            <h1>Agregar Persona</h1>
+            <div class="input-data">
+                <label>Cl</label>
+                <input type="text" [(ngModel)]="nuevoPrestamo.Cl" name="nombre">
+            </div>
+            <div class="input-data">
+                <label>Nombre</label>
+                <input type="text" [(ngModel)]="nuevoPrestamo.Nombre" name="Nombre">
+            </div>
+            <div class="input-data">
+                <label>Apellido Paterno</label>
+                <input type="text" [(ngModel)]="nuevoPrestamo.ApellidoPaterno" name="ApellidoPaterno">
+            </div>
+            <div class="input-data">
+                <label>Apellido Materno</label>
+                <input type="text" [(ngModel)]="nuevoPrestamo.ApellidoMaterno" name="ApellidoMaterno">
+            </div>
+            <div class="input-data">
+                <label>Cantidad Prestada</label>
+                <input type="number" [(ngModel)]="nuevoPrestamo.CantidadPrestada" name="CantidadPrestada">
+            </div>
+            <div class="input-data">
+                <label>Telefono</label>
+                <input type="text" [(ngModel)]="nuevoPrestamo.Telefono" name="Telefono">
+            </div>
+            <div class="input-data">
+                <label>Email</label>
+                <input type="email" [(ngModel)]="nuevoPrestamo.Email" name="Email">
+            </div>
+            <div class="input-data">
+                <label>FechaDePrestamo</label>
+                <input type="date" [(ngModel)]="nuevoPrestamo.FechaDePrestamo" name="FechaDePrestamo">
+            </div>
+            <div class="input-data">
+                <label>DiaDeCobro</label>
+                <input type="number" [(ngModel)]="nuevoPrestamo.DiaDeCobro" name="DiaDeCobro">
+            </div>
+            <div class="input-data">
+                <label>MesesDelPrestamo</label>
+                <input type="number" [(ngModel)]="nuevoPrestamo.MesesDelPrestamo" name="MesesDelPrestamo">
+            </div>
+            <div class="input-data">
+                <label>Intereses</label>
+                <input type="number" [(ngModel)]="nuevoPrestamo.Intereses" name="Intereses">
+            </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </form>
+</section>

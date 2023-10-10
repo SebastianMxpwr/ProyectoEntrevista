@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<h1>Prestamo</h1>
+<section id="TablaPrestamos">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Ap. Paterno</th>
+            <th>Ap. Materno</th>
+            <th>Cant. Prestada</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Fecha Prestamo</th>
+            <th>Dia de cobro</th>
+            <th>Meses Prestamo</th>
+            <th>Intereses</th>
+        </tr>
+        <tr>
+            <td>{{Prestamo.nombre}}</td>
+            <td>{{Prestamo.apellidoPaterno}}</td>
+            <td>{{Prestamo.apellidoMaterno}}%</td>
+            <td>{{Prestamo.cantidadPrestada}}</td>
+            <td>{{Prestamo.telefono}}</td>
+            <td>{{Prestamo.email}}</td>
+            <td>{{Prestamo.fechaDePrestamo}}</td>
+            <td>{{Prestamo.diaDeCobro}}</td>
+            <td>{{Prestamo.mesesDelPrestamo}}</td>
+            <td>{{Prestamo.intereses}}</td>
+        </tr>
+    </table>
+</section>
+
+<h1>Pagos</h1>
+<section id="TablaPrestamos">
+    <table>
+        <tr>
+            <th>Monto</th>
+            <th>Fecha de Pago</th>
+            <th>Periodo de pago</th>
+            <th>En Tiempo</th>
+        </tr>
+        <tr *ngFor="let pago of pagos">
+            <td>{{pago.monto}}</td>
+            <td>{{pago.fechaDePago}}</td>
+            <td>{{pago.periodoDePago}}</td>
+            <td [ngStyle]="{'color' : pago.enTiempo == false ? 'red': '#25b825'}">{{pago.enTiempo}}</td>
+        </tr>
+    </table>
+</section>

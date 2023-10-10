@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<section id="TablaPrestamos">
+    <table>
+        <tr>
+            <th>Pagos</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Interes</th>
+            <th>Monto debe</th>
+            <th>Monto Pagado</th>
+            <th>Monto Final</th>
+        </tr>
+        <tr *ngFor="let prestamo of prestamos">
+            <td><button (click)="detailPrestamo(prestamo.id)"><i class="fa-solid fa-plus"></i></button></td>
+            <td>{{prestamo.nombre}}</td>
+            <td>{{prestamo.email}}</td>
+            <td>{{prestamo.intereses}}%</td>
+            <td>{{prestamo.cantidadPrestada}}</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</section>
+<div class="button">
+    <button routerLink="crearPrestamo">Crear nuevo prestamo</button>
+</div>

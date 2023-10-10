@@ -1,0 +1,38 @@
+    $primary-color: #4b1c71;
+    $secondary-color: #7f4ca5;
+    $terciary-color: #b57edc;
+    $dark-color: #12181f;
+    $blank-color: #f0f3f1;
+
+nav{
+    height: 120px;
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        button{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            border: none;
+            color: $blank-color;
+            background-color: $secondary-color;
+            height: 40px;
+            border-radius: 10px;
+            transition: .2s ease all;
+            &:hover{
+                background-color: #6d428d;
+                transition: .2s ease all;
+            }
+            &:active{
+                font-size: 19px;
+            }
+        }
+
+    }
+}

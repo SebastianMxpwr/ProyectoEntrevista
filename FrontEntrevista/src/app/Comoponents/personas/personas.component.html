@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<section>
+    <h1>Personas</h1>
+    <div class="persona" *ngFor="let persona of personas; index as i">
+        <p>{{i+1}}</p>
+        <p>{{persona.nombre}}</p>
+        <p>{{persona.apellidoPaterno}}</p>
+        <p>{{persona.apellidoMaterno}}</p>
+        <p>{{persona.email}}</p>
+        <div>
+            <button (click)="editPersona(persona.id)"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button (click)="eliminarPersona(persona.id)"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+</section>
+
+<div class="button">
+    <button routerLink="crearPersona">Añadir nueva persona</button>
+</div>

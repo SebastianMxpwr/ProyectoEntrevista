@@ -1,0 +1,54 @@
+$primary-color: #4b1c71;
+$secondary-color: #7f4ca5;
+$terciary-color: #b57edc;
+$dark-color: #12181f;
+$blank-color: #f0f3f1;
+
+#TablaPrestamos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    table{
+        box-shadow:
+            15px 15px 31px rgba(0, 0, 0, 0.5); 
+;
+        tr{
+
+            th{
+                font-size: 20px;
+                padding: 10px;
+                background-color: $secondary-color;
+                color: $blank-color;
+            }
+
+            td{
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    button{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        border: none;
+        color: $blank-color;
+        background-color: $secondary-color;
+        height: 40px;
+        border-radius: 10px;
+        transition: .2s ease all;
+        &:hover{
+            transition: .2s ease all;
+            box-shadow:
+            7px 7px 31px rgba(0, 0, 0, 0.3);            
+            transform: translateY(-10px);
+    
+        }
+    }
+    
+}

@@ -1,0 +1,82 @@
+$primary-color: #4b1c71;
+$secondary-color: #7f4ca5;
+$terciary-color: #b57edc;
+$dark-color: #12181f;
+$blank-color: #f0f3f1;
+
+
+section{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .persona{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $secondary-color;
+        margin: 0px 20px 30px 20px;
+        transition: .2s ease all;
+
+        &:hover{
+            box-shadow:
+            7px 7px 31px rgba(0, 0, 0, 0.3);            
+            transform: translateY(-10px);
+            transition: .2s ease all;
+            font-size: 20px;
+    
+        }
+        p{
+            color: $blank-color;
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            min-height: 100%;
+            background-color: $terciary-color;
+            button{
+                font-family: 'Roboto', sans-serif;
+                border: none;
+                color: $blank-color;
+                background-color: $secondary-color;
+                border-radius: 10px;
+                height: 30px;
+                margin-left: 10px;
+                margin-right: 10px;
+                transition: .2s ease all;
+
+            &:active{
+                transition: .2s ease all;
+                color:$secondary-color;
+            }
+            }
+        }
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    button{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        border: none;
+        color: $blank-color;
+        background-color: $secondary-color;
+        height: 40px;
+        border-radius: 10px;
+        transition: .2s ease all;
+        &:hover{
+            transition: .2s ease all;
+            box-shadow:
+            7px 7px 31px rgba(0, 0, 0, 0.3);            
+            transform: translateY(-10px);
+    
+        }
+    }
+}
